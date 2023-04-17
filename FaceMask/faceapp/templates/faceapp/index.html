@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<title>
+    Face Mask Detection App
+</title>
+<head>
+    <style>
+        h1 {text-align: center;}
+    </style>
+</head>
+<body>
+
+<h1> Welcome To Face Mask Detection App</h1>
+<form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Submit">
+    </form>
+
+    <h1> {{result}} </h1>
+</body>
+</html>
